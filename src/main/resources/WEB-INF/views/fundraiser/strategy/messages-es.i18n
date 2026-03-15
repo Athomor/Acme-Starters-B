@@ -29,6 +29,8 @@ fundraiser.strategy.list.label.tacticCount= Tácticas
 fundraiser.strategy.list.label.expectedPercentage = Porcentaje esperado
 fundraiser.strategy.list.label.description = Descripción
 fundraiser.strategy.list.label.moreInfo = Más información
+fundraiser.strategy.list.value.draft=Borrador
+fundraiser.strategy.list.value.published=Publicado
 
 #List buttons
 fundraiser.strategy.list.button.create = Crear estrategia
