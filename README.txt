@@ -1,41 +1,19 @@
-# README.txt
-#
-# Copyright (C) 2012-2026 Rafael Corchuelo.
-#
-# In keeping with the traditional purpose of furthering education and research, it is
-# the policy of the copyright owner to permit non-commercial use and redistribution of
-# this software. It has been tested carefully, but it is not guaranteed for any particular
-# purposes.  The copyright owner does not offer any warranties or representations, nor do
-# they accept any liabilities with respect to them.
+# Acme-Starters (Group G027) — Innovation, Sponsorship & Campaign Management Platform
 
-This is a starter project. It is intended to be a core learning asset for the students
-who have enrolled in the Design and Testing subject of the Software Engineering curriculum
-of the University of Seville. This project helps them start working on their new information
-system projects.
+Layered enterprise web application built in **Java** on top of **Acme Framework (26.3.0)** as a team project for *Design & Testing II (DP2)* at the University of Seville (ETSII).
 
-The application is a web-based information system developed using the Acme Framework.
-It provides a modular architecture that supports multiple user roles and business features,
-implemented incrementally as part of an academic assignment.
+## My Role: Project Manager & Lead Developer
+- **Project Management:** Coordinated a 5-person development team (`G027`), led team chartering, milestone tracking, task allocation, and code reviews ([Chartering Report](reports/group/Chartering%20report.docx)).
+- **Backend & Frontend Implementation (166 commits):** Built the **Inventor**, **Invention**, and **Part** verticals end-to-end—entities, business rules & constraints (unique ticker check, EUR-only validation, derived attributes `monthsActive` & `cost`), role-based authorization, JSP views, and i18n support.
 
-Key characteristics
-- Layered architecture (presentation, service, persistence)
-- Role-based access control
-- Database-backed domain model with validation constraints
-- Built-in support for testing and incremental development
+## Architecture & Domain
+- **Layered Architecture:** Presentation (Spring MVC + JSP/i18n) → Services → Persistence (JPA/Hibernate) → Domain Constraints & Security Realms.
+- **User Roles & Modules:**
+  - `Inventor`: Manage inventions, parts, and publication workflows.
+  - `Fundraiser`: Define fundraising strategies and tactics.
+  - `Spokesperson`: Run campaigns and track milestones.
+  - `Sponsor`: Manage sponsorships and donations.
+  - `Auditor`: Author audit reports and audit sections.
 
-Typical business features (examples)
-- Campaign management (create, update, publish)
-- Milestone tracking and effort aggregation
-- Public browsing of published information
-
-Quick start (summary)
-1) Configure the appropriate Acme-Framework version
-2) Create the required databases (dev/test)
-3) Run the populator to initialise schema and sample data
-4) Launch the web application and verify the welcome page
-
-To get this project up and running, please follow the guidelines in the theory/lab
-materials, taking into account that you must link the appropriate version of
-the Acme-Framework excluding the following resources:
-
-- **/fragments/**
+## Tech Stack
+`Java` · `Spring MVC` · `JPA / Hibernate` · `Maven` · `JSP` · `Acme Framework`
